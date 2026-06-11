@@ -4,7 +4,7 @@ set -euo pipefail
 
 STATE_DIR="$HOME/.claude/kronny"
 SETTINGS="$HOME/.claude/settings.json"
-CMD_DEST="$HOME/.claude/commands/kronny.toml"
+CMD_DEST="$HOME/.claude/commands/kronny.md"
 SKILLS_DIR="$HOME/.claude/skills/kronny"
 
 echo "Uninstalling kronny..."

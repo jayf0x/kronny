@@ -3,11 +3,10 @@
   "version": "1.1.0",
   "description": "Time-limited auto-approve windows for Claude Code. /kronny [minutes] [\"pattern\"] — scoped to the current project by default, no session restart required.",
   "author": {
-    "name": "Jay Verstraete"
+    "name": "JayF0x"
   },
   "homepage": "https://github.com/jayf0x/kronny",
   "repository": "https://github.com/jayf0x/kronny",
   "license": "MIT",
-  "requires": ["python3"],
   "keywords": ["hook", "approve", "permissions", "auto-approve", "timer", "window", "claude-code"]
 }

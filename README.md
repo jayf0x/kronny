@@ -27,11 +27,25 @@ When the window expires, prompts come back automatically. No restart, no permane
 Requires Claude Code + `python3`.
 
 ```bash
+claude plugin marketplace add jayf0x/kronny
+claude plugin install kronny@kronny
+```
+
+Or from inside Claude Code: `/plugin marketplace add jayf0x/kronny`, then `/plugin install kronny@kronny`.
+
+Restart Claude Code, then run `/kronny`. Remove with `claude plugin uninstall kronny@kronny`.
+
+<details>
+<summary>Manual install (no plugin system)</summary>
+
+```bash
 git clone https://github.com/jayf0x/kronny.git
 cd kronny && ./install.sh
 ```
 
-Restart Claude Code, then run `/kronny`. Remove with `./uninstall.sh`.
+Remove with `./uninstall.sh`.
+
+</details>
 
 ## ⚙️ How it works
 

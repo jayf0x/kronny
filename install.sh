@@ -62,9 +62,12 @@ PYEOF
 fi
 
 # ── 3. Slash command ──────────────────────────────────────────────────────
+# The repo copy uses ${CLAUDE_PLUGIN_ROOT} (plugin install); rewrite the CLI
+# path to the manual-install location.
 mkdir -p "$COMMANDS_DIR"
-cp "$SCRIPT_DIR/commands/kronny.toml" "$COMMANDS_DIR/kronny.toml"
-echo "  Command: $COMMANDS_DIR/kronny.toml"
+sed 's|"${CLAUDE_PLUGIN_ROOT}/scripts/kronny.py"|~/.claude/kronny/kronny.py|' \
+  "$SCRIPT_DIR/commands/kronny.md" > "$COMMANDS_DIR/kronny.md"
+echo "  Command: $COMMANDS_DIR/kronny.md"
 
 # ── 4. Skill ──────────────────────────────────────────────────────────────
 mkdir -p "$SKILLS_DIR"

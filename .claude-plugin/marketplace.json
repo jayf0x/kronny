@@ -1,0 +1,16 @@
+{
+  "name": "kronny",
+  "metadata": {
+    "description": "Marketplace for kronny — time-limited auto-approve windows for Claude Code."
+  },
+  "owner": {
+    "name": "JayF0x"
+  },
+  "plugins": [
+    {
+      "name": "kronny",
+      "source": "./",
+      "description": "Time-limited auto-approve windows for Claude Code. /kronny [minutes] [\"pattern\"] — scoped to the current project by default, no session restart required."
+    }
+  ]
+}

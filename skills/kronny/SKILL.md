@@ -25,7 +25,9 @@ state file that the `kronny-hook.py` PreToolUse hook reads on every tool call.
 /kronny status       # show what's active and how long is left
 ```
 
-The command runs `python3 ~/.claude/kronny/kronny.py [args]` via the Bash tool.
+The command runs the kronny CLI via the Bash tool. When installed as a plugin,
+the CLI lives at `${CLAUDE_PLUGIN_ROOT}/scripts/kronny.py`; with a manual
+install it is `~/.claude/kronny/kronny.py`.
 
 ## State file
 
@@ -51,8 +53,8 @@ The command runs `python3 ~/.claude/kronny/kronny.py [args]` via the Bash tool.
 If the user runs `/kronny [args]`, call the CLI via Bash and show the output.
 Do not add commentary unless the command fails.
 
-If the user asks "is kronny active?" or "how long is left?", run
-`python3 ~/.claude/kronny/kronny.py status` and show the output.
+If the user asks "is kronny active?" or "how long is left?", run the CLI with
+`status` and show the output.
 
 Never set or extend a window on your own initiative — only when the user
 explicitly asks for one.
