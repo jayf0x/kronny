@@ -8,5 +8,18 @@
   "homepage": "https://github.com/jayf0x/kronny",
   "repository": "https://github.com/jayf0x/kronny",
   "license": "MIT",
-  "keywords": ["hook", "approve", "permissions", "auto-approve", "timer", "window", "claude-code"]
+  "keywords": ["hook", "approve", "permissions", "auto-approve", "timer", "window", "claude-code"],
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/kronny-hook.py\""
+          }
+        ]
+      }
+    ]
+  }
 }
