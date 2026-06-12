@@ -66,7 +66,7 @@ fi
 # path to the manual-install location.
 mkdir -p "$COMMANDS_DIR"
 sed 's|"${CLAUDE_PLUGIN_ROOT}/scripts/kronny.py"|~/.claude/kronny/kronny.py|' \
-  "$SCRIPT_DIR/commands/kronny.md" > "$COMMANDS_DIR/kronny.md"
+  "$SCRIPT_DIR/templates/kronny-command.md" > "$COMMANDS_DIR/kronny.md"
 echo "  Command: $COMMANDS_DIR/kronny.md"
 
 # ── 4. Skill ──────────────────────────────────────────────────────────────
